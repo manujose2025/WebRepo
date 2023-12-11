@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wayanad</title>
+	</head>
+	<body>
+		<h1>Wayanad</h1>
+		<p>Wayanad is a rural district in kerala state, southwest India. in the east , the Wayanad Wildlife Sanctuary is a lush leopards and egrets.</p>
+	</body>
+</html>
