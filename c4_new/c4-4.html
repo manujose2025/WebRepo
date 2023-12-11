@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: green;
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        div {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function check() {
+            var no = parseInt(document.getElementById("num").value);
+
+            if (no >= 0)
+                document.getElementById('pt').innerHTML = no + " is a positive number.";
+            else
+                document.getElementById('pt').innerHTML = no + " is a positive number.";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Check if Positive or Negative
+    </h1>
+    <div>
+        <label for="num">Enter any number : </label>
+        <input id="num" type="text" />
+        <button onclick="check()">Check</button>
+    </div>
+    <p id="pt"></p>
+</body>
+
+</html>

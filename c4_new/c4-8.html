@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: green;
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        div {
+            text-align: center;
+        }
+        
+        #d2 {
+            visibility: hidden;
+        }
+    </style>
+    <script>
+        function calcAge() {
+            var name = prompt("Enter your name");
+            document.getElementById('f1').value = name;
+            var db = prompt("Enter you date of birth", "DD-MM-YYYY");
+            document.getElementById('f2').value = db;
+
+            var arr = db.split("-");
+            var yr = parseInt(arr[2]);
+            var cu_yr = new Date()
+            cu_yr = cu_yr.getFullYear();
+
+            if (yr > 0) {
+                var age = cu_yr - yr
+                document.getElementById('f3').value = age;
+            } else {
+                document.getElementById('f3').value = "Invalid value entered.";
+            }
+
+            document.getElementById('d2').style.visibility = 'visible';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Calculate Age from Date of Birth
+    </h1>
+
+    <div id="d1">
+        <button onclick="calcAge()">Calculate Age</button>
+    </div>
+
+    <br/>
+
+    <div id="d2">
+        <label for="f1">Name : </label>
+        <input id="f1" type="text" disabled>
+        <br/>
+        <label for="f2">DOB : </label>
+        <input id="f2" type="text" disabled>
+        <br/>
+        <label for="f3">Age : </label>
+        <input id="f3" type="text" disabled>
+    </div>
+
+    <p id="pt"></p>
+</body>
+
+</html>
