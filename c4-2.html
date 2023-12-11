@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Addition of two numbers</h1>
+        <label for="1st">Enter the value of first number  : </label>
+        <input type="text" id="1st">
+        <br/>
+        <label for="2nd">Enter the value of second number : </label>
+        <input type="text" id="2nd">
+        <br/>
+        <button type="button" onclick="document.getElementById('prnt').innerHTML = parseInt(document.getElementById('1st').value) + parseInt(document.getElementById('2nd').value)">Sum</button>
+        <p id="prnt"></p>
+    </center>
+</body>
+
+</html>
